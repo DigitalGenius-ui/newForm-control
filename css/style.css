@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@1,400;1,500&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    padding: 2rem 0;
+    background: linear-gradient(rgba(0,0,0,0.800), rgba(0,0,0,0.800)), url("https://images.unsplash.com/photo-1492138786289-d35ea832da43?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8aG9tZSUyMG9mZmljZXxlbnwwfHwwfHw%3D&w=1000&q=80");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* form banner  */
+
+.container .form-layer{
+    background-color: #fff;
+    width: 60rem;
+    display: flex;
+}
+
+@media(max-width : 989px){
+    .container .form-layer {
+        width: 95%;
+    }
+}
+
+@media(max-width : 700px){
+    .container .form-layer {
+        flex-direction: column;
+    }
+}
+
+@media(max-width : 540px){
+    .container{
+        height: 850px;
+    }
+}
+
+@media(max-width : 414px){
+    .container{
+        height: 100vh;
+    }
+}
+
+@media(max-width : 390px){
+    .container{
+        height: 850px;
+    }
+}
+
+.container .form-layer .form-details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    flex: 1;
+    background: linear-gradient(rgba(0,0,0,0.600), rgba(0,0,0,0.600)), url("https://images.unsplash.com/photo-1492138786289-d35ea832da43?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8aG9tZSUyMG9mZmljZXxlbnwwfHwwfHw%3D&w=1000&q=80");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media(max-width : 700px){
+    .container .form-layer .form-details {
+        height: 50rem;
+        padding: 3rem 0;
+    }
+}
+
+.text .title{
+    font-size: 2.2rem;
+    font-family: 'Alegreya', serif;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+.text .enter{
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 0.5rem 0;
+}
+
+.account p{
+    font-size: 0.9rem;
+    padding: 1rem 0 0.5rem 0;
+}
+
+.account .accountBtn{
+    padding: 0.4rem 2rem;
+    border: 1px solid #fff;
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+    font-size: 0.8rem;
+}
+
+.accountBtn:hover{
+    background-color: rgba(255,255,255,0.200);
+}
+
+.form-details .text{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* input part */
+
+.form-layer .form-elements{
+    flex: 1;
+    padding:2rem ;
+}
+
+.form-elements form .person-detail{
+    display: flex;
+    gap: 1rem;
+}
+
+.person-detail .flex{
+    margin-bottom: 0;
+    width: 100%;
+}
+
+input{
+    width: 100%;
+    padding: 0.7rem;
+    outline: none;
+    border: 1px solid gray;
+}
+
+.border{
+    border: 1px solid green;
+}
+
+label{
+    text-transform: uppercase;
+    font-size: 0.7rem;
+}
+
+form div{
+    margin-bottom: 0.8rem;
+    position: relative;
+}
+
+form .firstName, .lastName{
+    margin-bottom: 0;
+}
+
+.btn{
+    width: 100%;
+    padding: 0.5rem;
+    background-color: goldenrod;
+    cursor: pointer;
+    border: none;
+    margin-top: 1rem;
+}
+
+.btn:hover{
+    background-color: rgba(218, 165, 32, 0.758);
+}
+
+
+/* error handling style  */
+form .error{
+    position: absolute;
+    left: 0;
+    top: 1rem;
+    font-size: 0.6rem;
+    color: red;
+    display: none;
+}
+
+.error.active{
+    display: flex;
+    top: 4.4rem;
+    top: 3rem;
+}
+
+.errorHandling{
+    box-shadow: 0px 0px 0px 1px red;
+}
+
+.success{
+    box-shadow: 0px 0px 0px 1px green;
+}
